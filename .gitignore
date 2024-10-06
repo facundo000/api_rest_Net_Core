@@ -1,0 +1,17 @@
+# .NET Core
+bin/
+obj/
+*.user
+*.suo
+*.db
+*.vspscc
+*.vssscc
+
+# Docker
+*.env
+
+# General
+.DS_Store
+.vscode/
+
+

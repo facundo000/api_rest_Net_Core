@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    image: "rapidfort/microsoft-sql-server-2019-ib"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=${DB_PASSWORD}
+      - MSSQL_PID=Express
+    ports:
+      - "1433:1433"  # Puerto para SQL Server
+    volumes:
+      - sql_data:/var/opt/mssql  # Persistencia de datos en un volumen
+
+volumes:
+  sql_data:
