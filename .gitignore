@@ -8,7 +8,7 @@ obj/
 *.vssscc
 
 # Docker
-*.env
+
 
 # General
 .DS_Store
